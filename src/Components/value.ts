@@ -3,13 +3,13 @@ import State      from '../State/State';
 
 const value = (state: State, classNames: ClassNames) => {
     return (`
-        <div
+        <button
             class="${classNames.value}"
             data-ref="value"
             ${state.isPlaceholderShown ? `aria-placeholder="${state.humanReadableValue}"` : ''}
         >
             ${state.humanReadableValue}
-        </div>
+        </button>
     `);
 };
 

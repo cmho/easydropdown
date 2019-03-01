@@ -14,7 +14,7 @@ function option(optionState: Option, state: State, classNames: ClassNames): stri
     ]);
 
     return (`
-        <div
+        <button
             class="${className}"
             data-ref="option item"
             role="option"
@@ -23,7 +23,7 @@ function option(optionState: Option, state: State, classNames: ClassNames): stri
             ${optionState.isDisabled ? 'aria-disabled="true"' : ''}
             >
                 ${optionState.label}
-        </div>
+        </button>
     `);
 }
 
